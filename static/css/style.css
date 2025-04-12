@@ -1,0 +1,90 @@
+/* Estilo geral */
+body {
+    background-color: #faf8f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Navbar estilizada */
+.navbar {
+    background-color: #0d6efd;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para cards */
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões primários */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #343a40;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form p {
+    margin-bottom: 1.2rem;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+form button,
+form a.btn {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}

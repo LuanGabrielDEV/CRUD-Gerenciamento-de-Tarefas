@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Lista de Tarefas</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Status</th>
+            <th>Início</th>
+            <th>Término</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for tarefa in tarefas %}
+        <tr>
+            <td>{{ tarefa.titulo }}</td>
+            <td>{{ tarefa.status }}</td>
+            <td>{{ tarefa.inicio }}</td>
+            <td>{{ tarefa.termino }}</td>
+            <td>
+                <a href="{% url 'editar-tarefa' tarefa.pk %}">Editar</a> |
+                <a href="{% url 'excluir-tarefa' tarefa.pk %}">Excluir</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
